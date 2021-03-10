@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="335.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Convertisseur.SommConvertController">
+   <children>
+      <TabPane prefHeight="335.0" prefWidth="416.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Bienvenue">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="-7.0" prefHeight="115.0" prefWidth="401.0" text="Bienvenue au Convertisseur d'Unitées" textAlignment="CENTER" textFill="#6b3b3b">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="IMG" fitHeight="190.0" fitWidth="175.0" layoutX="8.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/Aero%20Astro/Screen%20Shot%202021-03-04%20at%207.19.19%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <TextArea fx:id="txt1" layoutX="190.0" layoutY="80.0" prefHeight="171.0" prefWidth="223.0" text="Ici vous Pourrez Convertir les Unitées :&#10;- Temperature&#10;- Distance&#10;- Pression&#10;- Current&#10;&#10;Merci!" />
+                        <Button fx:id="btn1" layoutX="100.0" layoutY="261.0" mnemonicParsing="false" onAction="#quitter" prefHeight="27.0" prefWidth="191.0" text="Quittez" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Temperature">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txt2" layoutX="8.0" layoutY="8.0" prefHeight="52.0" prefWidth="402.0" text="Temperature">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </TextArea>
+                        <ComboBox fx:id="cb1" layoutX="28.0" layoutY="96.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cb2" layoutX="237.0" layoutY="96.0" prefWidth="150.0" />
+                        <TextField fx:id="txtf1" layoutX="23.0" layoutY="138.0" />
+                        <TextField fx:id="txtf2" layoutX="232.0" layoutY="138.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Distance">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txt3" layoutX="12.0" layoutY="8.0" prefHeight="57.0" prefWidth="392.0" text="Distance">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="txtf3" layoutX="27.0" layoutY="163.0" />
+                        <TextField fx:id="txtf4" layoutX="232.0" layoutY="163.0" />
+                        <ComboBox fx:id="cb3" layoutX="33.0" layoutY="124.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cb4" layoutX="238.0" layoutY="124.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Pression">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txt4" layoutX="13.0" layoutY="6.0" prefHeight="50.0" prefWidth="391.0" text="Pression">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="txtf5" layoutX="26.0" layoutY="151.0" />
+                        <TextField fx:id="txtf6" layoutX="241.0" layoutY="151.0" />
+                        <ComboBox fx:id="cb5" layoutX="247.0" layoutY="101.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cb6" layoutX="32.0" layoutY="101.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Current">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txt5" layoutX="16.0" layoutY="8.0" prefHeight="49.0" prefWidth="385.0" text="Current">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </TextArea>
+                        <TextField fx:id="txtf7" layoutX="31.0" layoutY="162.0" />
+                        <TextField fx:id="txtf8" layoutX="221.0" layoutY="162.0" />
+                        <ComboBox fx:id="cb7" layoutX="37.0" layoutY="110.0" prefWidth="150.0" />
+                        <ComboBox fx:id="cb8" layoutX="227.0" layoutY="110.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
